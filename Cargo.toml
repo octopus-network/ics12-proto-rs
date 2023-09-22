@@ -1,0 +1,26 @@
+[package]
+name = "ics12-proto-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ['Octopus Network <hi@oct.network>']
+homepage = "https://oct.network"
+readme = "README.md"
+repository = "https://github.com/octopus-network/ics12-proto-rs/"
+description = "ics12 proto for near light client."
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prost = { version = "0.11", default-features = false }
+bytes = { version = "1.2",  default-features = false }
+ibc-proto = { version = "0.35.0", default-features = false }
+
+
+[features]
+default = ["std"]
+std = [
+    "prost/std",
+    "bytes/std",
+    "ibc-proto/std",
+]
