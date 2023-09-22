@@ -79,8 +79,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "ics12-proto-rs"
-version = "0.1.0"
+name = "ics12-proto"
+version = "0.1.1"
 dependencies = [
  "bytes",
  "ibc-proto",

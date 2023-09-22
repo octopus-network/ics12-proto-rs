@@ -1,3 +1,7 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
-pub mod client;
+mod client;
+
+pub mod v1 {
+    pub use super::*;
+}
