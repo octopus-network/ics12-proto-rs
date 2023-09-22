@@ -2,6 +2,7 @@
 name = "ics12-proto-rs"
 version = "0.1.0"
 edition = "2021"
+license = "Apache-2.0"
 authors = ['Octopus Network <hi@oct.network>']
 homepage = "https://oct.network"
 readme = "README.md"
