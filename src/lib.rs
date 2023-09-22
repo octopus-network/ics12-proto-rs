@@ -3,5 +3,5 @@
 mod client;
 
 pub mod v1 {
-    pub use super::*;
+    pub use super::client::*;
 }
