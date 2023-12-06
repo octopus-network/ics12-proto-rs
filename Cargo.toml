@@ -13,9 +13,9 @@ description = "ics12 proto for near light client."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-prost = { version = "0.11", default-features = false }
-bytes = { version = "1.2",  default-features = false }
-ibc-proto = { version = "0.35.0", default-features = false }
+prost = { version = "0.12", default-features = false }
+bytes = { version = "1.5.0",  default-features = false }
+ibc-proto = { version = "0.38.0", default-features = false }
 
 
 [features]
@@ -25,3 +25,7 @@ std = [
     "bytes/std",
     "ibc-proto/std",
 ]
+
+[patch.crates-io]
+# ibc proto
+ibc-proto = { git = "https://github.com/octopus-network/ibc-proto-rs.git", branch = "v0.38.0-octopus"}
